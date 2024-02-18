@@ -1,0 +1,20 @@
+.
+├── App.css
+├── App.jsx
+├── assets
+│   ├── FogInForest.jpg
+│   ├── react.svg
+│   └── WallCandy-1474.jpg
+├── components
+│   ├── Base.jsx
+│   ├── Dashboard.jsx
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   └── Register.jsx
+├── index.css
+├── main.jsx
+├── schemas
+│   └── index.jsx
+└── tree.txt
+
+4 directories, 14 files

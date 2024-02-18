@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import { loginSchema } from "../schemas";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const initialValues = {
   username: "",
@@ -87,9 +88,17 @@ const Login = () => {
             className="bg-blue-500 text-white p-2 rounded-md w-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
             type="submit"
           >
-            Submit
+            Login
           </button>
         </form>
+        <div className="mt-4 text-center">
+          <p>
+            Don't have an account?{" "}
+            <Link to="/register" className="text-blue-500">
+              Register
+            </Link>
+          </p>
+        </div>
       </div>
     </>
   );

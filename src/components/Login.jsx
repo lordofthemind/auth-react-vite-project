@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import { loginSchema } from "../schemas";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const initialValues = {
   username: "",
@@ -9,6 +9,7 @@ const initialValues = {
 };
 
 const Login = () => {
+  const navigate = useNavigate();
   const {
     values,
     errors,
@@ -28,6 +29,7 @@ const Login = () => {
         );
         console.log("Login Succesfull", response.data);
         resetForm();
+        navigate("/dashboard");
       } catch (error) {
         console.error("Login Failed", error);
       }

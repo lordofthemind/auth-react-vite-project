@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 function Product() {
   return (
     <div>
-      <h1>Products</h1>
-      <Link to="/">Go to Dashboard</Link>
+      <h1>This is a Products page</h1>
     </div>
   );
 }

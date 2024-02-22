@@ -1,9 +1,10 @@
 import React from "react";
+import DashboardStatsGrid from "./DashboardStatsGrid";
 
 function Dashboard() {
   return (
-    <div>
-      <h1>This is a Dashboard page</h1>
+    <div className="flex gap-4">
+      <DashboardStatsGrid />
     </div>
   );
 }
